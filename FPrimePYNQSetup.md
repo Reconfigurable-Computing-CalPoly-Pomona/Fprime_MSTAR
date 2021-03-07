@@ -22,7 +22,7 @@ Follow these steps to setup your PYNQ-Z1/Z2 board with FPrime.
 ### Creating the bootable drive
 Bootable images with Fprime pre-installed are provided for the PYNQ-Z1/Z2 boards at the following locations:
 
-[PYNQ-Z1](https://drive.google.com/file/d/1YAkFanKYf6I-Awh9FplME5GzHEEdMyyc/view?usp=sharing)
+[PYNQ-Z1](https://drive.google.com/file/d/1oSFLiyuEgIg-Y4KqXsf0uZ2Yt1L-2iae/view?usp=sharing)
 
 [PYNQ-Z2](https://drive.google.com/file/d/1dgWHEQ1UevHf3aKtwjIwMHDAUY-g6zwE/view?usp=sharing)
 
