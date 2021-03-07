@@ -1,7 +1,7 @@
 # Running FPrime_MSTAR on PYNQ-Z1/Z2
 
 ## PYNQ Introduction
-PYNQ or Python Productivity for Zynq, is a project created by Xilinx and is a member of the Zynq class of devices. The Zynq architecture combines a dual-core ARM Cortex-A9 with a Field Programmable Gate Array (FPGA).PYNQ enables users to use the Python language and libraries to build electronic systems. Two boards which implement PYNQ are the PYNQ-Z1 and the PYNQ-Z2.
+PYNQ or Python Productivity for Zynq, is a project created by Xilinx and is a member of the Zynq class of devices. The Zynq architecture combines a dual-core ARM Cortex-A9 with a Field Programmable Gate Array (FPGA). PYNQ enables users to use the Python language and libraries to build electronic systems. Two boards which implement PYNQ are the PYNQ-Z1 and the PYNQ-Z2.
 
 ## FPrime Introduction
 FPrime is a software framework designed and created by NASA's Jet Propulsion Laboratory. FPrime's design focuses on rapid deployment and development for space applications. FPrime is component-driven which allows universal components to be re-used on multiple projects thus reducing development time and costs.
