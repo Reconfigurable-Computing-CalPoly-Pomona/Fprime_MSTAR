@@ -20,7 +20,7 @@ Our project seeks to depoloy FPrime to both the PYNQ-Z1 and PYNQ-Z2 board and ru
 ## Setup
 Follow these steps to setup your PYNQ-Z1/Z2 board with FPrime.
 ### Creating the bootable drive
-Bootable images are provided for the PYNQ-Z1/Z2 boards at the following locations:
+Bootable images with Fprime pre-installed are provided for the PYNQ-Z1/Z2 boards at the following locations:
 
 [PYNQ-Z1](https://drive.google.com/file/d/1YAkFanKYf6I-Awh9FplME5GzHEEdMyyc/view?usp=sharing)
 
