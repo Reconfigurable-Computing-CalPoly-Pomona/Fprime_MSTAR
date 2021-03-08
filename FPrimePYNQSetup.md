@@ -74,6 +74,27 @@ Log into the board using 'xilinx' as both your username and password.
 
 For more information about connecting to your PYNQ board please visit the Getting Started guide provided by Xilinx [here](https://pynq.readthedocs.io/en/v1.4/1_getting_started.html).
 
+### Building FPrime
+
+Once you have logged into your PYNQ-Z1/Z2 board you can navigate to the FPrime folder by running the following command:
+> cd FPrime
+
+You can now enter the python virtual environment by running the following command:
+> . ./fprime-venv/bin/activate
+ 
+Navigate to the Ref folder by running the following command:
+> cd fprime/Ref/
+
+FPrime can be built from the Ref folder by running:
+> fprime-util build
+
+![buildingFPrime](https://user-images.githubusercontent.com/9275528/110291692-08db8b00-7fa1-11eb-8741-80b3f0d8a5d9.PNG)
+
+FPrime will now build. This may take a few minutes.
+
+![BuildComplete](https://user-images.githubusercontent.com/9275528/110291896-4c35f980-7fa1-11eb-946b-5efbbb574392.PNG)
+
+### Running FPrime
 
 ## Additional Resources
 ### FPrime
