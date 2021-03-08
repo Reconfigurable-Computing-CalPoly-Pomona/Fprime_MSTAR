@@ -43,6 +43,38 @@ The resize script can be found at file location:
 
 ### Connecting to PuTTY
 
+PuTTY can be used to connect to the PYNQ-Z1/Z2 board in two ways.
+
+If you connect a USB to Micro-USB cable to your computer you will be able to use a COM port to connect to your PYNQ board. First power on your board and wait for it to boot up. You will know that the board has booted when the LED light labeled DONE lights up. To find the correct COM port on Windows go to your Device Manager and look for the PYNQ board under the ports drop down option.
+
+![Ports](https://user-images.githubusercontent.com/9275528/110284045-04f63b80-7f96-11eb-8452-b0d45f05ac9a.PNG) 
+
+Once you find the correct COM port open PuTTY and select Serial from the menu on the left side. There you can change the settings to match the PYNQ board. The settings should be entered as follows
+- Speed (baud): 115200
+- Data bits: 8
+- Stop bits: 1
+- Parity: None
+- Flow control: None
+
+The correct settings are displayed below.
+
+![PuTTYSettings](https://user-images.githubusercontent.com/9275528/110284743-10963200-7f97-11eb-9434-212b34db5e8a.PNG)
+
+Press Open to open a terminal window. Press Enter once to initiate the login process. Both the username and password will be set to 'xilinx'.
+
+To connect to your PYNQ board through an IP address your board will need to be connected to your network via an ethernet cable. Once the board has booted you can look for your board's IP address using an application such as [Advanced IP Scanner](https://www.advanced-ip-scanner.com/).
+
+![AIPS](https://user-images.githubusercontent.com/9275528/110288511-f95a4300-7f9c-11eb-8851-e4ff4490c239.PNG)
+
+You can now input this IP address into PuTTY as an SSH connection type.
+
+![PuTTYIP](https://user-images.githubusercontent.com/9275528/110288615-2a3a7800-7f9d-11eb-9084-1b625e60197c.PNG)
+
+Log into the board using 'xilinx' as both your username and password.
+
+For more information about connecting to your PYNQ board please visit the Getting Started guide provided by Xilinx [here](https://pynq.readthedocs.io/en/v1.4/1_getting_started.html).
+
+
 ## Additional Resources
 ### FPrime
 - [FPrime Github](https://github.com/nasa/fprime)
