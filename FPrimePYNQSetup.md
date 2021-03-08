@@ -96,6 +96,26 @@ FPrime will now build. This may take a few minutes.
 
 ### Running FPrime
 
+Running FPrime should be done with three terminals open. One terminal will be used to run the ground system, another terminal will be used to display the log outputs of any command that is run, the third terminal will be used to send commands to the ground system. Please make sure that you have enabled the virtual environment and are located in the fprime/Ref directory. Once you have built FPrime and have the three PuTTY sessions running you can start the ground system with the following command:
+
+> fprime-gds --dictionary ../Ref/Top/RefTopologyAppDictionary.xml
+
+![StartGDS](https://user-images.githubusercontent.com/9275528/110302938-aab5a480-7fae-11eb-9969-ca81cf9173c2.PNG)
+
+Using the second terminal, run the following command to initialize the log:
+
+> fprime-cli events --dictionary ../Ref/Top/RefTopologyAppDictionary.xml
+
+![InitiateLog](https://user-images.githubusercontent.com/9275528/110303191-f10b0380-7fae-11eb-9130-c76c0fd08736.PNG)
+
+Finally, the third terminal can be used to send commands to the GDS. In the following example we send an array copy command which will copy an array containing one-hundred thirty-two bit floating point valuesa specified amount of times. The command for the array copy is:
+
+> fprime-cli command-send arrSender.AC_DO_ARR -args 10  --dictionary ../Ref/Top/RefTopologyAppDictionary.xml
+
+Please note, the number ten in the command indicates that we are copying the array ten times. The log will now output timing data indicating when commands were recieved by both the recieving and sending components.
+
+![LogOutput](https://user-images.githubusercontent.com/9275528/110304166-1a785f00-7fb0-11eb-8858-4fe788e8e766.PNG)
+
 ## Additional Resources
 ### FPrime
 - [FPrime Github](https://github.com/nasa/fprime)
