@@ -1,0 +1,57 @@
+<component name="ArrReceiver" kind="queued" namespace="Ref">
+    <import_array_type>Ref/ArrType/OneHundredArrayAi.xml</import_array_type>
+    <import_port_type>Ref/ArrPorts/ArrCopyPortAi.xml</import_port_type>
+    <import_port_type>Ref/ArrPorts/ArrResultPortAi.xml</import_port_type>
+    <import_port_type>Svc/Sched/SchedPortAi.xml</import_port_type>
+    <import_serializable_type>Ref/ArrType/ArrCopySerializableAi.xml</import_serializable_type>
+    <comment>Component sending an array</comment>
+    <ports>
+        <port name="arrIn" data_type="Ref::ArrCopy" kind="sync_input">
+            <comment>
+            Port for receiving the math operation
+            </comment>
+        </port>
+        <port name="arrOut" data_type="Ref::ArrResult" kind="output">
+            <comment>
+            Port for returning the math result
+            </comment>
+        </port>
+        <port name="SchedIn" data_type="Sched" kind="sync_input">
+            <comment>
+            The rate group scheduler input
+            </comment>
+        </port>
+    </ports>
+    <commands>
+        <command kind="sync" opcode="1" mnemonic="AC_CLEAR_EVENT_THROTTLE">
+            <comment>Clear the event throttle
+            </comment>
+        </command>
+    </commands>
+    <telemetry>
+        <channel id="0" name="AC_OPERATION" data_type="Ref::ArrCopy">
+            <comment>
+            The operation
+            </comment>
+        </channel>
+    </telemetry>
+    <events>
+        <event id="2" name="AC_OPERATION_PERFORMED" severity="ACTIVITY_HI" format_string = "Operation performed: Copy" >
+        </event>
+        <event id="1" name="COPY_OPERATION_RECEIVED" severity="ACTIVITY_HI" format_string = "Operation Received: Copy" >
+        </event>
+        <event id="3" name="AC_THROTTLE_CLEARED" severity="ACTIVITY_HI" format_string = "Event throttle cleared" >
+            <comment>
+            Event throttle cleared
+            </comment>
+        </event>
+    </events>
+    <parameters>
+        <parameter id="0" name="factor2" data_type="F32" default="1.0" set_opcode="10" save_opcode="11">
+            <comment>
+            A test parameter
+            </comment>
+        </parameter>
+    </parameters>
+    
+</component>

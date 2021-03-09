@@ -1,0 +1,13 @@
+<interface name="ExpOp" namespace="Ref">
+    <comment>
+    Port to perform a modular exponentiation operation
+    </comment>
+    <args>
+        <arg name="base" type="U32">
+		</arg>
+        <arg name="exponent" type="U32">
+		</arg>
+        <arg name="modulus" type="U32">
+        </arg>
+    </args>
+</interface>

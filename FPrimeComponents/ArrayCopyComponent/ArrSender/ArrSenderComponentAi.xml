@@ -1,0 +1,56 @@
+<component name="ArrSender" kind="active" namespace="Ref">
+    <import_array_type>Ref/ArrType/OneHundredArrayAi.xml</import_array_type>
+    <import_port_type>Ref/ArrPorts/ArrCopyPortAi.xml</import_port_type>
+    <import_port_type>Ref/ArrPorts/ArrResultPortAi.xml</import_port_type>
+    <comment>Component sending an array</comment>
+    <ports>
+        <port name="arrOut" data_type="Ref::ArrCopy" kind="output">
+            <comment>
+            Port for sending the array
+            </comment>
+        </port>
+        <port name="arrIn" data_type="Ref::ArrResult" kind="async_input">
+            <comment>
+            Port for returning the array
+            </comment>
+        </port>
+    </ports>
+    <commands>
+        <command kind="async" opcode="0" mnemonic="AC_DO_ARR"> 
+            <comment>
+            Do an array copy
+            </comment>
+            <args>
+                <arg name="sentArr" type="F32">
+                    <comment>The array</comment>
+                </arg>
+             </args>
+        </command>
+    </commands>
+    <telemetry>
+        <channel id="0" name="AC_SENTARR" data_type="Ref::OneHundred">
+            <comment>
+            The first value
+            </comment>
+        </channel>
+        <channel id="3" name="AC_RES" data_type="Ref::OneHundred">
+            <comment>
+            The result array
+            </comment>
+        </channel>
+    </telemetry>
+    <events>
+        <event id="0" name="AC_ARR_RECV" severity="ACTIVITY_LO" format_string="Arr Recvd:">
+        </event>
+        <event id="1" name="AC_RESULT" severity="ACTIVITY_HI" format_string = "Arr result is: %d" >
+            <comment>
+            Received array result
+            </comment>
+            <args>
+                <arg name="result" type="F32">
+                    <comment>The array result</comment>
+                </arg>          
+            </args>
+        </event>
+    </events>
+</component>

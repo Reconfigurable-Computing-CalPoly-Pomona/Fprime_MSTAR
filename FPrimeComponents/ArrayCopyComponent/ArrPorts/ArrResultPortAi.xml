@@ -1,0 +1,11 @@
+<interface name="ArrResult" namespace="Ref">
+  <import_array_type>Ref/ArrType/OneHundredArrayAi.xml</import_array_type>
+    <comment>
+    Port to return the result of array copy
+    </comment>
+    <args>
+        <arg name="result" type="Ref::OneHundred">
+            <comment>the result of the array copy</comment>
+        </arg>
+    </args>
+</interface>

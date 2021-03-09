@@ -1,0 +1,85 @@
+<component name="ExpSender" kind="active" namespace="Ref">
+    <import_port_type>Ref/ExpPorts/ExpOpPortAi.xml</import_port_type>
+    <import_port_type>Ref/ExpPorts/ExpResultPortAi.xml</import_port_type>
+    <comment>Component sending base, exponent, and modulus for modular exponentiation</comment>
+    <ports>
+        <port name="ExpOut" data_type="Ref::ExpOp" kind="output">
+            <comment>
+            Port for sending the operation
+            </comment>
+        </port>
+        <port name="ExpIn" data_type="Ref::ExpResult" kind="async_input">
+            <comment>
+            Port for returning the result
+            </comment>
+        </port>
+    </ports>
+    <commands>
+        <command kind="async" opcode="0" mnemonic="ES_DO_EXP">
+            <comment>
+            Do modular exponentiation
+            </comment>
+            <args>
+                <arg name="base" type="U32">
+                    <comment>base value</comment>
+                </arg>          
+                <arg name="exponent" type="U32">
+                    <comment>exponent value</comment>
+                </arg>          
+                <arg name="modulus" type="U32">
+                    <comment>modulus value</comment>
+                </arg>
+             </args>
+        </command>
+    </commands>
+    <telemetry>
+        <channel id="0" name="ES_BASE" data_type="U32">
+            <comment>
+            The first value
+            </comment>
+        </channel>
+        <channel id="1" name="ES_EXPONENT" data_type="U32">
+            <comment>
+            The second value
+            </comment>
+        </channel>
+        <channel id="2" name="ES_MODULUS" data_type="U32">
+            <comment>
+            The operation
+            </comment>
+        </channel>
+        <channel id="3" name="ES_RESULT" data_type="U32">
+            <comment>
+            The result
+            </comment>
+        </channel>
+    </telemetry>
+    <events>
+        <event id="0" name="ES_COMMAND_RECV" severity="ACTIVITY_LO" format_string="Exp Mod Cmd Recvd: %u ^ %u mod %u"  >
+            <comment>
+            Math command received
+            </comment>
+            <args>
+                <arg name="base" type="U32">
+                    <comment>The base argument</comment>
+                </arg>          
+                <arg name="exponent" type="U32">
+                    <comment>The exponent argument</comment>
+                </arg>          
+                <arg name="modulus" type="U32">
+                    <comment>The modulus argument</comment>
+                </arg>          
+            </args>
+        </event>
+        <event id="1" name="ES_RESULT" severity="ACTIVITY_HI" format_string = "Result is %u" >
+            <comment>
+            Received result
+            </comment>
+            <args>
+                <arg name="result" type="U32">
+                    <comment>The result</comment>
+                </arg>          
+            </args>
+        </event>
+    </events>
+</component>

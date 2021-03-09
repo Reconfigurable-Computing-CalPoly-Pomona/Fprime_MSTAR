@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Autocoders/Python/schema/default/array_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+
+
+<serializable namespace="Ref" name="ArrCopy">
+    <comment>
+    This value holds the array
+    </comment>
+    <import_array_type>Ref/ArrType/OneHundredArrayAi.xml</import_array_type>
+    <members>
+        <member name="val1" type="Ref::OneHundred"/>
+        <member name="result" type="Ref::OneHundred"/>
+    </members>
+</serializable>

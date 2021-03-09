@@ -1,0 +1,64 @@
+<component name="ExpReceiver" kind="queued" namespace="Ref">
+    <import_port_type>Ref/ExpPorts/ExpOpPortAi.xml</import_port_type>
+    <import_port_type>Ref/ExpPorts/ExpResultPortAi.xml</import_port_type>
+    <import_port_type>Svc/Sched/SchedPortAi.xml</import_port_type>
+    <comment>Component sending a modular exponentiation operation</comment>
+    <ports>
+        <port name="ExpIn" data_type="Ref::ExpOp" kind="async_input">
+            <comment>
+            Port for receiving the operation
+            </comment>
+        </port>
+        <port name="expOut" data_type="Ref::ExpResult" kind="output">
+            <comment>
+            Port for returning the result
+            </comment>
+        </port>
+        <port name="SchedIn" data_type="Sched" kind="sync_input">
+            <comment>
+            The rate group scheduler input
+            </comment>
+        </port>
+    </ports>
+    <commands>
+        <command kind="async" opcode="0" mnemonic="MR_CLEAR_EVENT_THROTTLE">
+            <comment>Clear the event throttle
+            </comment>
+        </command>
+    </commands>
+    <telemetry>
+        <channel id="0" name="ER_BASE" data_type="U32">
+            <comment>
+            The first value
+            </comment>
+        </channel>
+        <channel id="1" name="ER_EXPONENT" data_type="U32">
+            <comment>
+            The second value
+            </comment>
+        </channel>
+        <channel id="2" name="ER_MODULUS" data_type="U32">
+            <comment>
+            The operation
+            </comment>
+        </channel>
+        <channel id="3" name="ER_RESULT" data_type="U32">
+            <comment>
+            The result
+            </comment>
+        </channel>
+    </telemetry>
+    <events>
+        <event id="0" name="MR_OPERATION_PERFORMED" severity="ACTIVITY_HI" format_string = "Operation performed" >
+            <comment>
+            Math operation performed
+            </comment>
+        </event>
+        <event id="1" name="MR_THROTTLE_CLEARED" severity="ACTIVITY_HI" format_string = "Event throttle cleared" >
+            <comment>
+            Event throttle cleared
+            </comment>
+        </event>
+    </events>
+    
+</component>
