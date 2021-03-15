@@ -1,7 +1,7 @@
 # This work has been done as a collaboration between California State Polytechnic University, Pomona and JPL/NASA on studying Fprime Flight-software under NASA M-STAR Grant# 80NSSC20K1859 
 
 
-** Principal Investigator:**
+**Principal Investigator:**
 
 **- Dr. Mohamed El-Hadedy:** Assistant Professor, Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.
 
