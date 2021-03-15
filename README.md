@@ -18,7 +18,8 @@
 8. Darren Chiu:  Electrical and Computer Engineering department, College of Engineering, Princeton University, New Jersey. 
 
 **Collaborators:**
-**1. Jeffrey Levison :** Supervisor, Small Scale Flight Software Group at Jet Propulsion Laboratory, JPL/NASA
+**1. Jeffrey Levison :
+       ** Supervisor, Small Scale Flight Software Group at Jet Propulsion Laboratory, JPL/NASA
 
 **Project Sponsors:**
 1. **[NASA](https://www.nasa.gov/)**
