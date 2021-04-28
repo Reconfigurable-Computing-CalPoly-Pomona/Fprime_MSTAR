@@ -9,7 +9,7 @@
 **Team Members:**
 
 1. Robert Herndon: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona. 
-2. Robert Banta: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
+2. Bryan Banta: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 3. Giuliano Millan: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 4. Dhanush Karthikeyan: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.  
 5. Macade Walker: Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona. 
