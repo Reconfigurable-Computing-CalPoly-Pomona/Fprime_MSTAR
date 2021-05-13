@@ -7,4 +7,4 @@ defaults:
     values:
       sidebar:
         title: "MSTAR"
-        nav: "nav_sidebar"
+        nav: "docs"
