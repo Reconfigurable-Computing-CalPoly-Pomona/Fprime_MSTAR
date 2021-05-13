@@ -1,7 +1,0 @@
-nav_sidebar:
-   - title : Home
-     url : .
-   - title : FPrime
-     children : 
-         - title : Child
-           url : .
