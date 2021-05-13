@@ -1,1 +1,4 @@
-Something
+[x] Create Website
+[ ] Add Home content
+[ ] Add links to other pages with content
+[ ] Succeed
