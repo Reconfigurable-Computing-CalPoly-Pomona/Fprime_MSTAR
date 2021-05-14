@@ -1,3 +1,3 @@
 ---
-permalink:/background/GAGE/
+permalink: /background/GAGE/
 ---
