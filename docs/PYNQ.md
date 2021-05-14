@@ -10,4 +10,4 @@ Xilinx provides modified versions of Ubuntu 18.04 \{1\} which can be burned onto
 
 The second partition takes up the rest of the available space on the drive. The size of this partition will change the first time the PYNQ board is booted and a RESIZED flag will be written to the Environment file stored in the etc folder. The partition type is Linux and utilized the Ext4 file system. A bootable image containing FPrime with each of the test components can be downloaded from the GitHub page linked through the QR code at the end of the paper.
 
-\{1\}:
+\{1\}: Downloadable PYNQ images *[Online] 2020. http://www.pynq.io/board.html*
