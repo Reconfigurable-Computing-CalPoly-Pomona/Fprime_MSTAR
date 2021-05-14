@@ -1,6 +1,7 @@
 - [x] Create Website
 - [x] Add Home content
-- [ ] Add links to other pages with content
+- [x] Add links to other pages with content
+- [ ] Suffer
 - [ ] Succeed
 
 The Project NASA M-STAR 2021 works to benchmark the PYNQ boards for flight software purposes.
