@@ -13,6 +13,7 @@ PYNQ or Python Productivity for Zynq, is a project created by Xilinx and is a me
     1. [PYNQ](PYNQ.md)
     2. [FPrime](FPrime.md)
     3. [cFs](cFs.md)
+    4. [GAGE](GAGE.md)
 3. [Experiments](.)
 4. [Troubleshooting](.)
 5. [Future Work](.)
