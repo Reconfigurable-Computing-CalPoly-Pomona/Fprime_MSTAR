@@ -3,7 +3,7 @@ permalink: /background/FPrime/
 ---
 
 ## FPrime
-FPrime is a component-driven framework that enables rapid development and deployment of spaceflight and other embedded software applications. Originally developed by NASA Jet Propulsion Laboratory, FPrime has been successfully deployed on several space applications. It is tailored but not limited to small-scale spaceflight systems such as CubeSats, SmallSats, and instruments. [1] Components developed for FPrime are reusable which allows for quick development and deployment on missions. Components are defined through clear xml templates to create custom features and connected through a defined topology. FPrime uses peer to peer connections for communication between components. FPrime is well documented with an active GitHub repository and a google group community.
+FPrime is a component-driven framework that enables rapid development and deployment of spaceflight and other embedded software applications. Originally developed by NASA Jet Propulsion Laboratory, FPrime has been successfully deployed on several space applications. It is tailored but not limited to small-scale spaceflight systems such as CubeSats, SmallSats, and instruments. \{1\} Components developed for FPrime are reusable which allows for quick development and deployment on missions. Components are defined through clear xml templates to create custom features and connected through a defined topology. FPrime uses peer to peer connections for communication between components. FPrime is well documented with an active GitHub repository and a google group community.
 
 ### Types Of FPrime Components
 Components are divided into 3 groups: Active, Passive, and Queued. Active components have their own dedicated thread to perform functions upon request. Passive components uses the thread of active components when called upon. Queued components have no dedicated thread but instead have a queue which is used to dedicate time to tasks when appropriate. 
@@ -29,4 +29,4 @@ The topology xml file must include the xml file of the component being implement
 
 The topology cpp file is used to initialize the components, register the commands, and exit the components when appropriate.
 
-[1] https://github.com/nasa/fprime
+\{1\} https://github.com/nasa/fprime
