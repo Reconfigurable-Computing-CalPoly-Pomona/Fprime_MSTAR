@@ -1,3 +1,7 @@
+---
+permalink: /contributing/
+---
+
 **Principal Investigator:**
 
 **- Dr. Mohamed El-Hadedy:** Assistant Professor, Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.
