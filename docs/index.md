@@ -17,4 +17,4 @@ PYNQ or Python Productivity for Zynq, is a project created by Xilinx and is a me
 4. [Troubleshooting](.)
 5. [Future Work](.)
 6. [Conclusion](.)
-8. [Contributers](README.md)
+7. [Contributers](README.md)
