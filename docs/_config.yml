@@ -1,9 +1,8 @@
 plugins:
   - jekyll-relative-links
-  - jekyll-redirect-from
 theme: jekyll-theme-slate
 title: FPrime_MSTAR
-redirect_to: https://reconfigurable-computing-calpoly-pomona.github.io/Fprime_MSTAR/
+  - url: https://reconfigurable-computing-calpoly-pomona.github.io/Fprime_MSTAR/
 description: Low Power Implementation of Flight Software
 relative_links:
   enabled: true
