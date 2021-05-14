@@ -1,5 +1,5 @@
 theme: jekyll-theme-slate
-title: FPRIME_MSTAR
+title: FPrime_MSTAR
 description: Low Power Implementation of Flight Software
 plugins:
   - jekyll-relative-links
