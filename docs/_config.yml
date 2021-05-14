@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
+title: [FPRIME_MSTAR](.)
 plugins:
   - jekyll-relative-links
 relative_links:
