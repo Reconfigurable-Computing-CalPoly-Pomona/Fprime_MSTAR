@@ -1,6 +1,5 @@
 theme: jekyll-theme-slate
-title: FPrime_MSTAR
-   url: https://reconfigurable-computing-calpoly-pomona.github.io/Fprime_MSTAR/
+title: FPrime_MSTAR {% link ./ %}
 description: Low Power Implementation of Flight Software
 plugins:
   - jekyll-relative-links
