@@ -20,3 +20,5 @@ Computation time is defined as how long it takes for the receiver component to r
 In Table 1, we observed that data computation time for the PYNQ-Z2 was 20.3% higher than it was for the Z1 board. Since the median values are significantly lower than the Z1's, The Z2 memory assignment time has high variance compared to the average value. The Z1 overall command execution is 69% faster given the variance and even has a median value that is only 10% lower compared to the 60\% lower Z2 median.
 
 These aspects all contribute to the 23% increase in execution time from the Z2 board over the Z1 board. The SD cards used are of the same brand and size so there should be little variance as far as individual chip performance.
+
+#### Modular Exponentiation
