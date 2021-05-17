@@ -8,4 +8,4 @@ GAGE is a family of sponge-based hash functions with states between  232  and  5
 
 [GAGE Website](http://gageingage.org/)
 
-\{1\}  D.  Gligoroski,  H.  Mihajloska,  D.  Otte  and  M.  El-Hadedy,  GAGE  and  InGAGE  v1.03,[online]  Available:http://http://gageingage.org/upload/GAGEandInGAGEv1.03.pdf.
+\{1\}  D.  Gligoroski,  H.  Mihajloska,  D.  Otte  and  M.  El-Hadedy,  GAGE  and  InGAGE  v1.03,[online]  Available:http://gageingage.org/upload/GAGEandInGAGEv1.03.pdf.
