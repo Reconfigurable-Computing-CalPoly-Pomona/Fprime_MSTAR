@@ -9,7 +9,7 @@ PYNQ or Python Productivity for Zynq, is a project created by Xilinx and is a me
 FPrime is a software framework designed and created by NASA's Jet Propulsion Laboratory. FPrime's design focuses on rapid deployment and development for space applications. FPrime is component-driven which allows universal components to be re-used on multiple projects thus reducing development time and costs.
 
 ## Project Goal
-Our project seeks to depoloy FPrime to both the PYNQ-Z1 and PYNQ-Z2 board and run benchmark tests in order to record performance metrics by running both memory and computing intensive tests. To this end we have created FPrime components which perform array copy operations as well as calculate modular exponentiation.
+Our project seeks to deploy FPrime to both the PYNQ-Z1 and PYNQ-Z2 board and run benchmark tests in order to record performance metrics by running both memory and computing intensive tests. To this end we have created FPrime components which perform array copy operations as well as calculate modular exponentiation.
 
 ## Requirements
 - [PYNQ-Z1 or PYNQ-Z2 board](http://www.pynq.io/board.html)
